@@ -1,0 +1,70 @@
+:root {
+  --time-duration: 9s;
+}
+body {
+  margin: 0px;
+  background-color: turquoise;
+}
+body::-webkit-scrollbar {
+  overflow: hidden;
+  display: none;
+}
+h3 {
+  margin: 0px;
+}
+
+/* ROD-ONE */
+#rod-one {
+  position: absolute;
+  top: 0%;
+  background-color: black;
+  color: white;
+  width: 20vw;
+  height: 5vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* ROD-TWO */
+#rod-two {
+  position: absolute;
+  bottom: 0%;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid white;
+  width: 20vw;
+  box-sizing: border-box;
+  height: 5vh;
+  padding: 5px;
+  text-align: center;
+}
+
+/* BALL */
+#ball {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: radial-gradient(red 0%, black 221%);
+  box-sizing: border-box;
+}
+
+.animate-top-right {
+  transition: transform linear var(--time-duration);
+  transform: translateX(2000px) translateY(-2000px);
+}
+.animate-bottom-right {
+  transition: transform linear var(--time-duration);
+  transform: translateX(2000px) translateY(2000px);
+}
+.animate-top-left {
+  transition: transform linear var(--time-duration);
+  transform: translateX(-2000px) translateY(-2000px);
+}
+.animate-bottom-left {
+  transition: transform linear var(--time-duration);
+  transform: translateX(-2000px) translateY(2000px);
+}
